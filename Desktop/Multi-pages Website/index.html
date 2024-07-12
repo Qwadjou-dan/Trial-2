@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            primaryColor: 'blue'
+          },
+          fontSize: {
+            heroText: '100px',
+            subTitle: '30px'
+          },
+          margin: {
+            heroMargin: '50px'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <div>
+    <nav>
+      <ul class="flex flex-row justify-center items-center gap-5 mt-5">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="our-services.html">Our Services</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div>
+  <h1 class="text-heroText font-bold underline text-primaryColor m-heroMargin">
+      Welcome Home
+  </h1>
+
+  <p class="text-subTitle">Home is where good food is</p>
+  </div>
+  
+</body>
+</html>
